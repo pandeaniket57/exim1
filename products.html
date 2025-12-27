@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Pande EXIM</title>
+    <meta name="description" content="Browse our catalog of premium export-quality agricultural products including Nashik Red Onions, White Onions, and Onion Powder.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/pandeeximlogo.png" alt="Pande EXIM"></a>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="hero product-hero">
+        <div class="hero-slideshow">
+            <div class="slide-item" style="background-image: url('assets/p1.jpg');"></div>
+            <div class="slide-item" style="background-image: url('assets/p2.jpg');"></div>
+            <div class="slide-item" style="background-image: url('assets/p3.jpg');"></div>
+            <div class="slide-item" style="background-image: url('assets/p4.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1>Connecting Indian Agriculture with the World</h1>
+            <p>Exporting the finest fresh onions and onion powder worldwide.</p>
+            <a href="products.html" class="btn btn-primary">Explore Our Products</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Product Catalog</h2>
+        <p style="text-align: center; margin-bottom: 40px;">Explore our range of high-quality export goods.</p>
+        
+        <!-- Search Bar -->
+        <div class="search-wrapper">
+            <input type="text" id="productSearch" class="search-input" placeholder="Search products...">
+        </div>
+
+        <!-- The Grid Container -->
+        <div id="all-products" class="grid-layout">
+            <!-- JS will inject ALL products here -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" style="padding: 0;">
+            <div class="footer-social">
+                <h4 id="footer_follow_us">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Pande Exim " aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/pande_exim" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/pandeexim" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://x.com/pandeexim" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://wa.me/917447560011" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2023 Pande EXIM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Load up to 20 products
+        loadBloggerContent('Products', 'all-products', 20);
+        // Initialize Search
+        initSearch('productSearch', 'all-products');
+    </script>
+</body>
+</html>
